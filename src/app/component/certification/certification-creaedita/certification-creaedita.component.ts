@@ -47,8 +47,8 @@ export class CertificationCreaeditaComponent implements OnInit {
     }
     aceptar(): void {
       if (this.form.valid) {
-        this.certification.idCertification = this.form.value.idProceeding;
-        this.certification.title = this.form.value.name;
+        this.certification.idCertification = this.form.value.idCertification;
+        this.certification.title = this.form.value.title;
         this.certification.client.idUser = this.form.value.client;
 
         if (this.edicion) {
